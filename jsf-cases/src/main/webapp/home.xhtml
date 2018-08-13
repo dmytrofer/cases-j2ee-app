@@ -6,12 +6,14 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:cf="http://cases.df.com.ua/functions">
-<f:view>
+<h:body>
     <h:outputLabel value="Hello, world"/>
     <br/>
-    <h:outputText value="#{helloWorld.greetingMessage}"/>
+    <h:outputText value="#{homeBeanModel.greetingMessage}"/>
     <br/>
     <h:outputText value="#{cf:nextGreeting()}"/>
     <br/>
-</f:view>
+    <!--<f:event listener="#{homeBeanModel.triggerViewCreation}" type="preRenderView"/>-->
+    <f:event listener="#{cf:triggerViewCreation()}" type="preRenderView"/>
+</h:body>
 </html>

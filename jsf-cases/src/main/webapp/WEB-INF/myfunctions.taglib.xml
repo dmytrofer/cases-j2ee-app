@@ -11,4 +11,11 @@
         <function-class>com.ua.df.cases.j2ee.jsf.MyFunctions</function-class>
         <function-signature>java.lang.String nextGreeting()</function-signature>
     </function>
+
+    <function>
+        <function-name>triggerViewCreation</function-name>
+        <function-class>com.ua.df.cases.j2ee.jsf.MyFunctions</function-class>
+        <function-signature>void triggerViewCreation()</function-signature>
+    </function>
+
 </facelet-taglib>

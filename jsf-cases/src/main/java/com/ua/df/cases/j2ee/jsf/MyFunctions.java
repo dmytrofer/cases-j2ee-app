@@ -12,4 +12,8 @@ public final class MyFunctions {
     public static String nextGreeting() {
         return "Message #" + COUNTER.incrementAndGet();
     }
+
+    public static void triggerViewCreation() {
+        System.out.println("MF-triggered-" + COUNTER.incrementAndGet());
+    }
 }
